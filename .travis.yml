@@ -1,16 +1,12 @@
-sudo: false
 language: node_js
-cache:
-  directories:
-    - node_modules
-notifications:
-  email: false
-# whitelist
+
+node_js:
+  - v6
+  - v5
+  - v4
+  - '0.12'
+  - '0.10'
+
 branches:
   only:
     - master
-    - develop
-node_js:
-  - iojs
-before_install:
-  - npm i -g jshint
