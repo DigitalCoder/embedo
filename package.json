@@ -6,7 +6,6 @@
   "scripts": {
     "prestart": "npm install",
     "start": "python -m SimpleHTTPServer",
-    "test": "mocha",
     "build": "uglifyjs embedo.js --compress drop_console=true --mangle --screw-ie8 --stats --o=embedo.min.js"
   },
   "repository": {
