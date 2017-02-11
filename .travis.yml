@@ -1,14 +1,16 @@
-sudo: true
+sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
 notifications:
   email: false
-node_js:
-  - v7
-  - v6
-  - v5
-  - v4
-  - '0.12'
-  - '0.10'
+# whitelist
 branches:
   only:
     - master
+    - develop
+node_js:
+  - iojs
+before_install:
+  - npm i -g jshint
